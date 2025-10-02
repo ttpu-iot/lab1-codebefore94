@@ -9,13 +9,64 @@
 
 #include "Arduino.h"
 
+#define RED 15
+#define GRN 4
+#define BLU 22
+#define YLW 23
+
+#define BTN 14  // button port
+#define LSR 33  // light sensor port
+
+
+
+// Exercise 1: Solution
+
 /****************************************************/
 void setup(void) {
+    Serial.begin(9600);
 
+    pinMode(RED, OUTPUT);
 }
 
 
 /****************************************************/
 void loop(void) {
 
+    digitalWrite(RED, HIGH);
+    Serial.println("RED ON");
+
+    delay(500);
+
+    digitalWrite(RED, LOW);
+    Serial.println("RED OFF");
+
+    delay(500);
+
 }
+
+
+// // Exercise 2: Solution
+
+// /****************************************************/
+// void setup(void) {
+
+// }
+
+
+// /****************************************************/
+// void loop(void) {
+
+// }
+
+// // Exercise 3: Solution
+
+// /****************************************************/
+// void setup(void) {
+
+// }
+
+
+// /****************************************************/
+// void loop(void) {
+
+// }
