@@ -18,12 +18,11 @@
 #define LSR 33  // light sensor port
 
 
-
 // Exercise 1: Solution
 
 /****************************************************/
 void setup(void) {
-    Serial.begin(9600);
+    Serial.begin(115200);
 
     pinMode(RED, OUTPUT);
 }
@@ -31,7 +30,6 @@ void setup(void) {
 
 /****************************************************/
 void loop(void) {
-
     digitalWrite(RED, HIGH);
     Serial.println("RED ON");
 
@@ -39,34 +37,7 @@ void loop(void) {
 
     digitalWrite(RED, LOW);
     Serial.println("RED OFF");
-
     delay(500);
 
 }
 
-
-// // Exercise 2: Solution
-
-// /****************************************************/
-// void setup(void) {
-
-// }
-
-
-// /****************************************************/
-// void loop(void) {
-
-// }
-
-// // Exercise 3: Solution
-
-// /****************************************************/
-// void setup(void) {
-
-// }
-
-
-// /****************************************************/
-// void loop(void) {
-
-// }
